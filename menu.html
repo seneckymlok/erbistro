@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - eR</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Lora:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="img/logo.png" alt="bistro." class="logo-img">
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html" data-translate="nav-home">DOMOV</a></li>
+                <li><a href="menu.html" class="active" data-translate="nav-menu">MENU</a></li>
+                <li><a href="suppliers.html" data-translate="nav-suppliers">DODÁVATELIA</a></li>
+                <li><a href="gallery.html" data-translate="nav-gallery">GALÉRIA</a></li>
+                <li><a href="index.html#reservation" class="scroll-to-reservation" data-translate="nav-reservation">REZERVÁCIA</a></li>
+                <li><a href="contact.html" data-translate="nav-contact">KONTAKT</a></li>
+            </ul>
+            <div class="language-switcher">
+                <button class="lang-btn active" data-lang="sk">SK</button>
+                <span class="lang-separator">/</span>
+                <button class="lang-btn" data-lang="en">EN</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="subpage-content">
+        <h1 class="page-title" data-translate="menu-title">MENU</h1>
+
+        <!-- Menu Tabs -->
+        <div class="menu-tabs">
+            <button class="menu-tab active" data-tab="breakfast" data-translate="tab-breakfast">RAŇAJKY/BRUNCH</button>
+            <button class="menu-tab" data-tab="weekly" data-translate="tab-weekly">TÝŽDENNÉ MENU</button>
+            <button class="menu-tab" data-tab="main" data-translate="tab-main">MENU</button>
+            <button class="menu-tab" data-tab="drinks" data-translate="tab-drinks">NÁPOJE</button>
+        </div>
+
+        <!-- Breakfast/Brunch Section -->
+        <div class="menu-tab-content active" id="breakfast">
+            <div class="menu-image-display">
+                <img src="img/ranajky.jpeg" alt="Raňajky/Brunch Menu" class="menu-full-image">
+            </div>
+        </div>
+
+        <!-- Weekly Menu Section -->
+        <div class="menu-tab-content" id="weekly">
+            <div class="menu-image-display">
+                <img src="" alt="Týždenné Menu" class="menu-full-image">
+            </div>
+        </div>
+
+        <!-- Main Menu Section -->
+        <div class="menu-tab-content" id="main">
+            <div class="menu-image-display">
+                <img src="" alt="Stále Menu" class="menu-full-image">
+            </div>
+        </div>
+
+        <!-- Drinks Section -->
+        <div class="menu-tab-content" id="drinks">
+            <div class="menu-image-display">
+                <img src="" alt="Nápojové Menu" class="menu-full-image">
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <a href="contact.html" data-translate="footer-contact">Kontakt</a>
+            <span class="separator">|</span>
+            <span data-translate="footer-hours">Pon–Pia 11:00–22:00, So–Ne 12:00–23:00</span>
+            <span class="separator">|</span>
+            <a href="#">Instagram</a>
+        </div>
+    </footer>
+
+    <script src="js/translations.js"></script>
+    <script src="js/menu-tabs.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

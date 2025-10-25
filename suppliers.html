@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suppliers – Restaurant</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Lora:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar" id="navbar">
+    <div class="nav-container">
+        <a href="index.html" class="logo">
+            <img src="img/logo.png" alt="bistro." class="logo-img">
+        </a>
+        <ul class="nav-menu">
+            <li><a href="index.html" data-translate="nav-home">DOMOV</a></li>
+            <li><a href="menu.html" data-translate="nav-menu">MENU</a></li>
+            <li><a href="suppliers.html" class="active" data-translate="nav-suppliers">DODÁVATELIA</a></li>
+            <li><a href="gallery.html" data-translate="nav-gallery">GALÉRIA</a></li>
+            <li><a href="index.html#reservation" data-translate="nav-reservation">REZERVÁCIA</a></li>
+            <li><a href="contact.html" data-translate="nav-contact">KONTAKT</a></li>
+        </ul>
+        <div class="language-switcher">
+            <button class="lang-btn active" data-lang="sk">SK</button>
+            <span class="lang-separator">/</span>
+            <button class="lang-btn" data-lang="en">EN</button>
+        </div>
+    </div>
+</nav>
+
+<!-- Main Content -->
+<main class="subpage-content">
+    <h1 class="page-title" data-translate="suppliers-title">NAŠI DODÁVATELIA</h1>
+
+    <div class="supplier-grid">
+        <div class="supplier-card">
+            <h3 class="supplier-name">GREEN VALLEY FARM</h3>
+            <p class="supplier-description">Organic vegetables, herbs, and seasonal produce grown within 30km of our kitchen. Biodynamic farming methods.</p>
+            <p class="supplier-location">Region: Local Valley</p>
+        </div>
+
+        <div class="supplier-card">
+            <h3 class="supplier-name">HERITAGE BUTCHER</h3>
+            <p class="supplier-description">Grass-fed beef, pasture-raised pork and lamb. Traditional dry-aging techniques. Family-run since 1967.</p>
+            <p class="supplier-location">Region: Mountain District</p>
+        </div>
+
+        <div class="supplier-card">
+            <h3 class="supplier-name">COASTAL FISH CO.</h3>
+            <p class="supplier-description">Day-boat caught fish and shellfish. Sustainable sourcing. Direct from harbor to table within 24 hours.</p>
+            <p class="supplier-location">Region: North Coast</p>
+        </div>
+
+        <div class="supplier-card">
+            <h3 class="supplier-name">ARTISAN DAIRY</h3>
+            <p class="supplier-description">Raw milk cheese, cultured butter, fresh cream. Small-batch production from single-origin herds.</p>
+            <p class="supplier-location">Region: Southern Hills</p>
+        </div>
+
+        <div class="supplier-card">
+            <h3 class="supplier-name">STONE MILL BAKERY</h3>
+            <p class="supplier-description">Heritage grain flour milled on-site. Naturally leavened sourdough cultures. Ancient baking methods preserved.</p>
+            <p class="supplier-location">Region: Old Town</p>
+        </div>
+
+        <div class="supplier-card">
+            <h3 class="supplier-name">WILDWOOD FORAGERS</h3>
+            <p class="supplier-description">Seasonal mushrooms, wild herbs, edible flowers. Ethically harvested from protected woodland areas.</p>
+            <p class="supplier-location">Region: Forest Reserve</p>
+        </div>
+    </div>
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="footer-content">
+        <a href="contact.html" data-translate="footer-contact">Kontakt</a>
+        <span class="separator">|</span>
+        <span data-translate="footer-hours">Pon–Pia 11:00–22:00, So–Ne 12:00–23:00</span>
+        <span class="separator">|</span>
+        <a href="#">Instagram</a>
+    </div>
+</footer>
+
+<script src="js/translations.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
