@@ -1,4 +1,4 @@
-// Navigation hide on scroll - Clean version
+// Navigation hide on scroll
 const navbar = document.getElementById('navbar');
 let lastScroll = 0;
 
@@ -26,8 +26,39 @@ window.addEventListener('scroll', () => {
     lastScroll = currentScroll;
 });
 
-// Smooth scroll to reservation
+// Hamburger menu toggle
 document.addEventListener('DOMContentLoaded', () => {
+    const hamburgerBtn = document.getElementById('hamburgerBtn');
+    const navMenu = document.getElementById('navMenu');
+
+    if (hamburgerBtn) {
+        hamburgerBtn.addEventListener('click', () => {
+            hamburgerBtn.classList.toggle('active');
+            navMenu.classList.toggle('active');
+            document.body.classList.toggle('menu-open');
+        });
+
+        // Close menu when clicking on a link
+        const navLinks = navMenu.querySelectorAll('a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                hamburgerBtn.classList.remove('active');
+                navMenu.classList.remove('active');
+                document.body.classList.remove('menu-open');
+            });
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!navbar.contains(e.target)) {
+                hamburgerBtn.classList.remove('active');
+                navMenu.classList.remove('active');
+                document.body.classList.remove('menu-open');
+            }
+        });
+    }
+
+    // Smooth scroll to reservation
     const reservationLink = document.querySelector('.scroll-to-reservation');
     if (reservationLink) {
         reservationLink.addEventListener('click', (e) => {
@@ -54,7 +85,7 @@ if (form) {
         console.log('Event booking request:', data);
 
         // Get current language and translations
-        const lang = window.currentLang || 'en';
+        const lang = window.currentLang || 'sk';
         const t = window.translations[lang];
 
         // Create translated confirmation message
