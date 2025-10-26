@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>eR</title>
+    <title>bistro. – Raw & Honest Dining</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Lora:wght@400&display=swap" rel="stylesheet">
@@ -14,9 +14,17 @@
     <nav class="navbar" id="navbar">
         <div class="nav-container">
             <a href="index.html" class="logo">
-                <img src="img/logo.png" alt="bistro." class="logo-img">
+                <img src="images/logo.svg" alt="bistro." class="logo-img">
             </a>
-            <ul class="nav-menu">
+
+            <!-- Hamburger Menu Button (Mobile Only) -->
+            <button class="hamburger-menu" id="hamburgerBtn" aria-label="Menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+
+            <ul class="nav-menu" id="navMenu">
                 <li><a href="index.html" class="active" data-translate="nav-home">DOMOV</a></li>
                 <li><a href="menu.html" data-translate="nav-menu">MENU</a></li>
                 <li><a href="suppliers.html" data-translate="nav-suppliers">DODÁVATELIA</a></li>
@@ -25,9 +33,9 @@
                 <li><a href="contact.html" data-translate="nav-contact">KONTAKT</a></li>
             </ul>
             <div class="language-switcher">
-                <button class="lang-btn active" data-lang="sk">SK</button>
-                <span class="lang-separator">/</span>
                 <button class="lang-btn" data-lang="en">EN</button>
+                <span class="lang-separator">/</span>
+                <button class="lang-btn active" data-lang="sk">SK</button>
             </div>
         </div>
     </nav>
@@ -38,9 +46,9 @@
             <!-- Block 1: Menu -->
             <a href="menu.html" class="content-block">
                 <div class="block-image">
-                    <img src="" alt="Menu na tento týždeň">
+                    <img src="images/menu-preview.jpg" alt="Menu na tento týždeň">
                     <div class="image-overlay-centered">
-                        <h2 class="overlay-title" data-translate="home-menu-title">MENU</h2>
+                        <h2 class="overlay-title" data-translate="home-menu-title">MENU NA TENTO TÝŽDEŇ</h2>
                         <button class="btn-outline" data-translate="btn-view">ZOBRAZIŤ</button>
                     </div>
                 </div>
@@ -49,7 +57,7 @@
             <!-- Block 2: Suppliers -->
             <a href="suppliers.html" class="content-block">
                 <div class="block-image">
-                    <img src="" alt="Naši dodávatelia">
+                    <img src="images/suppliers-preview.jpg" alt="Naši dodávatelia">
                     <div class="image-overlay-centered">
                         <h2 class="overlay-title" data-translate="home-suppliers-title">NAŠI DODÁVATELIA</h2>
                         <button class="btn-outline" data-translate="btn-view">ZOBRAZIŤ</button>
@@ -60,7 +68,7 @@
             <!-- Block 3: Gallery -->
             <a href="gallery.html" class="content-block">
                 <div class="block-image">
-                    <img src="" alt="Galéria">
+                    <img src="images/gallery-preview.jpg" alt="Galéria">
                     <div class="image-overlay-centered">
                         <h2 class="overlay-title" data-translate="home-gallery-title">GALÉRIA</h2>
                         <button class="btn-outline" data-translate="btn-view">ZOBRAZIŤ</button>
@@ -73,7 +81,7 @@
     <!-- Reservation Section -->
     <section class="reservation-section" id="reservation">
         <div class="reservation-container">
-            <h1 class="page-title" data-translate="event-title">REZERVOVAŤ PODUJATIE</h1>
+            <h1 class="page-title" data-translate="event-title">OBJEDNAŤ PODUJATIE</h1>
 
             <form class="reservation-form" id="reservationForm">
                 <div class="form-group">
@@ -136,7 +144,7 @@
                     <select id="location" name="location" required>
                         <option value="" data-translate="option-select-location">Vyberte miesto</option>
                         <option value="your-venue" data-translate="option-your-venue">Vaše miesto</option>
-                        <option value="our-space" data-translate="option-our-space">Náš priestor</option>
+                        <option value="our-space" data-translate="option-our-space">Náš priestor (ak je k dispozícii)</option>
                     </select>
                 </div>
 
